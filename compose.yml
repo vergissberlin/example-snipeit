@@ -1,17 +1,9 @@
 services:
 
-  mysql:
-    image: mariadb:10.3
-    volumes:
-    - ./data/db:/var/lib/mysql
-    env_file:
-    - .env
-    restart: unless-stopped
-
   app:
     image: snipe/snipe-it:latest
     depends_on:
-    - mysql
+    - db
     volumes:
     - ./data/app:/var/lib/snipeit
     - ./data/logs:/var/www/html/storage/logs
@@ -21,3 +13,18 @@ services:
       - "8080:80"
     restart: unless-stopped
 
+  db:
+    image: mariadb:10.3
+    volumes:
+    - ./data/db:/var/lib/mysql
+    env_file:
+    - .env
+    restart: unless-stopped
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+    volumes:
+      - ./data/mailhog:/var/mailhog
+    restart: unless-stopped
