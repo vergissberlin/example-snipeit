@@ -17,7 +17,7 @@ To get access to the mailhog, go to `http://localhost:8025`.
 docker compose down && docker compose up -d
 ```
 
-## Generatw App Key
+## Generate app key
 
 ```bash
 docker compose run --rm app php artisan key:generate --show
