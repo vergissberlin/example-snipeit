@@ -7,4 +7,5 @@
 !/.gitignore
 !/compose.yml
 !/README.md
+!/renovate.json
 !/LICENSE
