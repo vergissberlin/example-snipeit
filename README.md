@@ -22,11 +22,3 @@ docker compose down && docker compose up -d
 ```bash
 docker compose run --rm app php artisan key:generate --show
 ```
-
-## Experimental
-
-### Send a test email with mailhog
-
-```bash
-docker compose run --rm mailhog /usr/sbin/sendmail -S mail:1025
-```
