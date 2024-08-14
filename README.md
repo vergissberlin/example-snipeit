@@ -2,8 +2,6 @@
 
 Snipe-IT is a free, open source IT asset management system written in PHP. With this docker-compose file, you can easily run Snipe-IT on your local machine.
 
-![Snipe-IT](./docs/dashboard.png)
-
 ## Architektur
 
 ```mermaid
