@@ -12,6 +12,7 @@ graph LR
     C[MySQL] --> D[Docker Container]
 ```
 
+Snipe-IT ist ein kostenloses, Open-Source-IT-Asset-Management-System, das in PHP geschrieben ist. Mit diesem Docker-Compose-File können Sie Snipe-IT einfach auf Ihrem lokalen Rechner ausführen.
 
 ## Usage
 
@@ -149,11 +150,6 @@ EXPOSE 80
 # Start the Apache server
 CMD ["apache2-foreground"]
 ```
-
-## SnipeIT
-
-Snipe-IT ist ein kostenloses, Open-Source-IT-Asset-Management-System, das in PHP geschrieben ist. Mit diesem Docker-Compose-File können Sie Snipe-IT einfach auf Ihrem lokalen Rechner ausführen.
-
 
 ### Docker-Image
 
